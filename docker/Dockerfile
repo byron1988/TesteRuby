@@ -21,8 +21,5 @@ RUN set -x \
     && adduser -u 82 -D -S -G www-data www-data
 
 USER www-data
-
 COPY --chown=82:82 ./source /source
-
-
 WORKDIR /source
